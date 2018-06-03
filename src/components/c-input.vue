@@ -1,14 +1,6 @@
----
-to: "src/components/<%= 
-  blocks.indexOf('component') !== -1 ? 'c-' :  
-  blocks.indexOf('layout') !== -1 ? 'l-' : ''
-%><%= name %>.vue"
----
-<% const component = blocks.indexOf('component') !== -1;
-const layout = blocks.indexOf('layout') !== -1;
-const componentName = component ? 'c-' + name : layout ? 'l-' + name : name; %><template>
-  <div><% if (layout) { %>
-    <slot></slot><% } %><% if (component) { %><!-- 
+<template>
+  <div>
+    <!-- 
     Bind the parent's id attribute to the label's "for" attribute. 
     The id attribute from the parent will be added to the input,
     ensuring that the label specifies which input it is bound to.
@@ -27,13 +19,13 @@ const componentName = component ? 'c-' + name : layout ? 'l-' + name : name; %><
       v-bind="$attrs"
       v-on="listeners"
       :value="value"
-    ><% } %>
+    >
   </div>
 </template>
 
 <script>
 export default {
-  name: '<%= componentName %>',<% if (component) { %>
+  name: 'c-input',
   inheritAttrs: false,
   props: {
     value: String,
@@ -52,7 +44,7 @@ export default {
       };
     },
   },
-  methods: {},<% }%>
+  methods: {},
 };
 </script>
 

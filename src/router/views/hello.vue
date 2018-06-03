@@ -1,6 +1,13 @@
 <template>
   <div class="hello">
-    <c-button></c-button>
+    <c-input
+      id="form-input"
+      v-model="inputData"
+      label="input"
+      placeholder="Email"
+      @focus="focusEvent"
+    />
+    <p>{{ inputData }}</p>
   </div>
 </template>
 
@@ -9,29 +16,18 @@ export default {
   name: 'hello',
   data() {
     return {
+      inputData: '',
       msg: 'Welcome to Your Vue.js App',
     };
+  },
+  methods: {
+    focusEvent: () => {
+      console.log('It focused!');
+    },
   },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>

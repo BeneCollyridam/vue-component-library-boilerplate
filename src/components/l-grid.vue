@@ -6,13 +6,7 @@
 
 <script>
 export default {
-  name: 'l-tabs',
-  data() {
-    return {};
-  },
-  props: {},
-  computed: {},
-  methods: {},
+  name: 'l-grid',
 };
 </script>
 

@@ -4,7 +4,7 @@
 
 ## Credits and inspiration
 
-:heart: This project is built on top of the versatile [vue-library-template](https://github.com/prograhammer/vue-library-template) by [prograhammer](https://github.com/prograhammer), which is great for quickly prototyping and publishing a vue library on npm.
+:heart: This project is built on top of the versatile [vue-library-template](https://github.com/prograhammer/vue-library-template) by [prograhammer](https://github.com/prograhammer), which is great for quickly prototyping and publishing a vue library on [npm](https://www.npmjs.com/).
 
 :heart: This project is heavily inspired by [Chris Fritz's](https://github.com/chrisvfritz) 'must-read' [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate) which is the gold-standard for Vue SPA projects. [This talk](https://youtu.be/7lpemgMhi0k) by Chris Fritz explains many of the patterns used and advocated in this project, and comes highly recommended - his energy is amazing!
 
@@ -16,7 +16,7 @@
 
 * **Side-by-side component and documentation development** with hot-reload, lint-on-save.
 * **Generators** to reinforce consistency and speed up development time.
-* **Pre-configured components** with the bare minimum styling and functionality so you don't have to start from scratch.
+* **Pre-configured components** with the bare minimum styling and functionality so you don't have to start from scratch, otherwise BYOS (bring your own styles).
 * **Tests with jest** and auto-generated unit test files when creating new components using generators.
 * **Easily publish to npm** with publish hooks and incorporate your new library in other projects.
 
