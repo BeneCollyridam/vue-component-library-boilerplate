@@ -8,9 +8,15 @@
 
 :heart: This project is heavily inspired by [Chris Fritz's](https://github.com/chrisvfritz) 'must-read' [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate) which is the gold-standard for Vue SPA projects. [This talk](https://youtu.be/7lpemgMhi0k) by Chris Fritz explains many of the patterns used and advocated in this project, and comes highly recommended - his energy is amazing!
 
+:heart: Icons and fonts from Google's [material icon](https://material.io/icons/) and [font libraries](https://fonts.google.com/) are used in this project. Special shout out to the incredible [Vue Material](https://vuematerial.io/) project by [marcosmoura](https://github.com/marcosmoura) for providing the inspiration for many of the pre-configured components in this project.
+
 ## Project features
 
-
+* **Side-by-side component and documentation development** with hot-reload, lint-on-save.
+* **Generators** to reinforce consistency and speed up development time.
+* **Pre-configured components** with the bare minimum styling and functionality so you don't have to start from scratch.
+* **Tests with jest** and auto-generated unit test files when creating new components using generators.
+* **Easily publish to npm** with publish hooks and incorporate your new library in other projects.
 
 ## Getting started
 
