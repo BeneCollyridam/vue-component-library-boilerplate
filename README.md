@@ -1,6 +1,6 @@
 # Vue Component Library Boilerplate
 
-:wave: This is a boilerplate for developing vue component libraries. This project aims to be the love-child of [prograhammer's vue-library-template](https://github.com/prograhammer/vue-library-template) and [chrisvfritz's vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate), to create an opinionated vue component library with side-by-side library/docs development, publish hooks, generators, pre-configured components, base styles, unit tests and more.
+:wave: This is a boilerplate for developing vue component libraries. This project aims to be the love-child of [prograhammer's vue-library-template](https://github.com/prograhammer/vue-library-template) and [chrisvfritz's vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate), to create an opinionated vue component library setup with side-by-side library/docs development, publish hooks, generators, pre-configured components, base styles, unit tests and more.
 
 ## Credits and inspiration
 
