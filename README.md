@@ -10,6 +10,8 @@
 
 :heart: Icons and fonts from Google's [material icon](https://material.io/icons/) and [font libraries](https://fonts.google.com/) are used in this project. Special shout out to the incredible [Vue Material](https://vuematerial.io/) project by [marcosmoura](https://github.com/marcosmoura) for providing the inspiration for many of the pre-configured components in this project.
 
+:heart: [Vue Awesome's](https://github.com/vuejs/awesome-vue) deserves a mention for the sheer amout of inspirational links!
+
 ## Project features
 
 * **Side-by-side component and documentation development** with hot-reload, lint-on-save.
