@@ -1,8 +1,18 @@
 # Vue Component Library Boilerplate
 
-A boilerplate for creating Vue component libraries.
+:wave: This is a boilerplate for developing vue component libraries. This project aims to be the love-child of [prograhammer's vue-library-template](https://github.com/prograhammer/vue-library-template) and [chrisvfritz's vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate), to create an opinionated vue component library with side-by-side library/docs development, publish hooks, generators, pre-configured components, base styles, unit tests and more.
 
-## Build Setup
+## Credits and inspiration
+
+:heart: This project is built on top of the versatile [vue-library-template](https://github.com/prograhammer/vue-library-template) by [prograhammer](https://github.com/prograhammer), which is great for quickly prototyping and publishing a vue library on npm.
+
+:heart: This project is heavily inspired by [Chris Fritz's](https://github.com/chrisvfritz) 'must-read' [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate) which is the gold-standard for Vue SPA projects. [This talk](https://youtu.be/7lpemgMhi0k) by Chris Fritz explains many of the patterns used and advocated in this project, and comes highly recommended - his energy is amazing!
+
+## Project features
+
+
+
+## Getting started
 
 ``` bash
 # install dependencies
@@ -20,19 +30,13 @@ npm run build --report
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-## Component Types
-Component types are divided into the following the categories:
+## Documentation
 
-### Pure Components 'c-**.vue'
-'Pure' components have a single designated task.
+This project includes a `docs` folder with more details on:
 
-### Layout Components 'l-**.vue'
-Layout components wrap other components and contents. Layout components can contain other layout components.
-
-Layout components are further divided into page layouts and section layouts:
-
-#### Page Layouts 'l-page-**.vue'
-Page layouts take up the entire screen and there should only be one page layout per view. Page layouts typically wrap section 
-
-#### Section Layouts l-section-**.vue'
-Section layounts take up a part of the
+1. [Setup and development](docs/development.md)
+1. [Architecture](docs/architecture.md)
+1. [Languages and technologies](docs/tech.md)
+1. [Components](docs/components.md)
+1. [Documentation](docs/documentation.md)
+1. [Publishing your library and docs](docs/publishing.md)
