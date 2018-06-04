@@ -54,7 +54,6 @@ export default {
   width: calc(100vh-#{$side-menu-width});
   margin-top: $top-nav-height;
   margin-left: $side-menu-width;
-  background: red;
 }
 
 </style>
