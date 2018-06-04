@@ -3,8 +3,8 @@
     <div :class="$style.sideMenu">
       <slot name="side-menu"></slot>
     </div>
-    <div :class="$style.topNav">
-      <slot name="top-nav"></slot>
+    <div :class="$style.topBar">
+      <slot name="top-bar"></slot>
     </div>
     <div :class="$style.content">
       <slot name="content"></slot>
@@ -15,9 +15,6 @@
 <script>
 export default {
   name: 'l-dashboard',
-  props: {
-    navHeight: String,
-  },
 };
 </script>
 
@@ -28,31 +25,31 @@ export default {
   width: 100%;
 }
 
-.topNav {
+.topBar {
   position: fixed;
   top: 0;
   left: 0;
-  height: $top-nav-height;
+  height: $top-bar-height;
   width: 100%;
-  border-bottom: $wire-border;
-  box-shadow: $wire-shadow;
+  border-bottom: $border-default;
+  box-shadow: $shadow-default;
   background-color: #fff;
 }
 
 .sideMenu {
   position: fixed;
-  top: $top-nav-height;
+  top: $top-bar-height;
   left: 0;
   width: $side-menu-width;
-  height: calc(100vh - #{$top-nav-height});
-  border-right: $wire-border;
-  background-color: #fff;
+  height: calc(100vh - #{$top-bar-height});
+  border-right: $border-default;
+  background-color: $color-white;
 }
 
 .content {
-  min-height: calc(100vh - #{$top-nav-height});
+  min-height: calc(100vh - #{$top-bar-height});
   width: calc(100vh-#{$side-menu-width});
-  margin-top: $top-nav-height;
+  margin-top: $top-bar-height;
   margin-left: $side-menu-width;
 }
 
