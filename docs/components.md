@@ -46,7 +46,7 @@ All generated components come with an adjacent unit test that lives next to your
 
 ### Styling components
 
-This project uses `scss` as the default style language in `.vue` files. Since `scss` is also valid `css` it makes sense to include this as a default. To use another style preprocesser see the vue-loader docs on [using preprocessers](https://vue-loader.vuejs.org/guide/pre-processors.html#sass).
+This project uses `scss` as the default style language in `.vue` files. Since `css` is also valid `scss` it makes sense to include this as a default. To use another style preprocesser see the vue-loader docs on [using preprocessers](https://vue-loader.vuejs.org/guide/pre-processors.html#sass).
 
 #### Using modules
 
