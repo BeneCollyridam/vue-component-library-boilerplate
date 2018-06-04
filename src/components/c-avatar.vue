@@ -7,7 +7,7 @@
 
     <c-icon
       v-else
-      icon="face"
+      icon="person"
     />
   </div>
 </template>
@@ -31,17 +31,25 @@ export default {
   height: $size-xlarge;
   width: $size-xlarge;
   background: $color-grey;
-  border: $border-default;
+  // border: $border-default;
   border-radius: 50%;
-
-  &.xsmall {
-    height: $size-medium;
-    width: $size-medium;
-  }
   
   &.small {
     height: $size-large;
     width: $size-large;
+
+    .c-icon {
+      font-size: $size-small;
+    }
+  }
+
+  &.large {
+    height: $size-xxlarge;
+    width: $size-xxlarge;
+
+    .c-icon {
+      font-size: $size-large;
+    }
   }
 }
 </style>

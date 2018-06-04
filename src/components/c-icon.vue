@@ -18,10 +18,14 @@ export default {
 @import '../styles/lib.scss';
 
 .c-icon {
+  &.small {
+    font-size: $size-small;
+  }
+
   &.medium {
     font-size: $size-medium;
   }
-  
+
   &.large {
     font-size: $size-large;
   }
