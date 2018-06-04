@@ -24,12 +24,8 @@ export default {
 <style lang="scss" module>
 @import '../styles/lib.scss';
 
-$top-nav-height: 60px;
-$side-menu-width: 200px;
-
 .container {
   width: 100%;
-  min-height: 100vh;
 }
 
 .topNav {
@@ -54,10 +50,11 @@ $side-menu-width: 200px;
 }
 
 .content {
-  height: 100vh;
-  width: 100%;
-  padding-top: $top-nav-height;
-  padding-left: $side-menu-width;
+  min-height: calc(100vh - #{$top-nav-height});
+  width: calc(100vh-#{$side-menu-width});
+  margin-top: $top-nav-height;
+  margin-left: $side-menu-width;
+  background: red;
 }
 
 </style>
