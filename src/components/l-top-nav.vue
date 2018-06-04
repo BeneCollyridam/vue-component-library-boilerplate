@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'l-grid',
+  name: 'l-top-nav',
 };
 </script>
 

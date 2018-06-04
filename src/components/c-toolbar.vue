@@ -1,6 +1,5 @@
 <template>
-  <div :class="$style.container">
-    <!-- 
+  <div><!-- 
     Bind the parent's id attribute to the label's "for" attribute. 
     The id attribute from the parent will be added to the input,
     ensuring that the label specifies which input it is bound to.
@@ -25,7 +24,7 @@
 
 <script>
 export default {
-  name: 'c-input',
+  name: 'c-toolbar',
   inheritAttrs: false,
   props: {
     value: String,
@@ -50,10 +49,4 @@ export default {
 
 <style lang="scss" module>
 @import '../styles/lib.scss';
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 </style>
