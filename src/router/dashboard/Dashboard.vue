@@ -42,6 +42,11 @@ export default {
           route: { name: 'Messages' },
         },
         {
+          title: 'People',
+          icon: 'people',
+          route: { name: 'People' },
+        },
+        {
           title: 'Notifications',
           icon: 'notifications',
           route: { name: 'Notifications' },

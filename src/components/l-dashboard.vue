@@ -10,7 +10,10 @@
           class="l-drawer-menu-item"
           active-class="active"
         >
-          <c-icon :icon="item.icon"/>
+          <c-icon 
+            v-if="item.icon"
+            :icon="item.icon"
+          />
           <span class="l-drawer-menu-item-title">{{ item.title }}</span>
         </router-link>
       </div>
@@ -37,6 +40,9 @@ export default {
 
 <style lang="scss">
 @import '../styles/lib.scss';
+
+$dashboard-bar-height: 64px;
+$dashboard-drawer-width: 200px;
 
 .l-dashboard-wrapper {
   width: 100%;
@@ -88,8 +94,11 @@ export default {
   }
 }
 
+.l-drawer-menu-item .c-icon {
+  margin-right: $size-medium;
+}
+
 .l-drawer-menu-item-title {
-  margin-left: $size-small;
   font-size: 14px;
   font-family: $heading-font-family;
   white-space: nowrap; 
