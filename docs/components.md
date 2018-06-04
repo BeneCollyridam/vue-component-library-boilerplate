@@ -9,7 +9,7 @@
 
 ## Component types
 
-Components are divided into 'pure' and 'layout' components. 
+Components are divided into "pure" and "layout" components.
 
 **Pure components** can be thought of as a single element, like a button or an input. They can also contain other components and act as a container, such as card and menu components.
 
@@ -19,31 +19,36 @@ Components are divided into 'pure' and 'layout' components.
 
 `c-**.vue`
 
-'Pure' components have a single designated task. Components can contain other components.
+"Pure" components have a single designated task. Components can contain other components.
 
 ### Layout components
 
 `l-**.vue`
 
-Layout components wrap other components and are purely concerned with the layout of its contents.
+"Layout" components wrap other components and are purely concerned with the layout of its contents.
 
 ## Generating new components
 
-This project includes component generators to reinforce consistency and speed up development time. See the [Hygen docs](http://www.hygen.io/) for more generator documentation.
+This project includes component generators to reinforce consistency and speed up development time. See the [Hygen docs](http://www.hygen.io/) for more generator documentation. You can update existing generators and their templates in the `_templates` folder or create new generators by adding a new folder in the `_templates/new` folder.
+
+When you generate a new component, you will be prompted to choose a component type (i.e. "component" or "layout"). See the section on [component types](#component-types) for more info on which component type is the most appropriate.
+
+```bash
+# Generate a new component with adjacent unit test
+yarn new component
+```
+
+All generated components come with an adjacent unit test that lives next to your component file in the `src/components` folder.
 
 ### Styling components
 
-This project uses `scss` as the default style language in `.vue` files. Since `scss` is also valid `css` it makes sense to include this as a default. To use another style preprocesser, see the vue-loader docs on [using preprocessers](https://vue-loader.vuejs.org/guide/pre-processors.html#sass).
+This project uses `scss` as the default style language in `.vue` files. Since `scss` is also valid `css` it makes sense to include this as a default. To use another style preprocesser see the vue-loader docs on [using preprocessers](https://vue-loader.vuejs.org/guide/pre-processors.html#sass).
 
 #### Using modules
 
-New components have the `module` style setting as default in all component files, ie.e `<style lang="scss" module>` to enforce [css modules](https://github.com/css-modules/css-modules).
-
-> A CSS Module is a CSS file in which all class names and animation names are scoped locally by default. All URLs (url(...)) and @imports are in module request format (./xxx and ../xxx means relative, xxx and xxx/yyy means in modules folder, i. e. in node_modules).
+New components have the `module` style setting as default in all component files, ie.e `<style lang="scss" module>` to enforce [css modules](https://github.com/css-modules/css-modules). By using modules, all styles will be suffixed with a hash (e.g. `class="selector-abc123"`) to prevent any styling clashes with other styles.
 
 **To opt-out of the `module` setting simply delete it in the `<style>` tag or replace it with `scoped` if you want scope the styles without using modules.**
-
-By using modules, all styles will be suffixed with a hash (e.g. `class="selector-abc123"`) to prevent any styling clashes with other styles. 
 
 Styles are included in the `<template>` tag by using `$style.` in an element's `:class` binding. For example:
 
@@ -72,8 +77,10 @@ Styles are included in the `<template>` tag by using `$style.` in an element's `
 </style>
 ```
 
-Details on vue-loader configuration can be found in the [vue-loader docs](https://vue-loader.vuejs.org/guide/css-modules.html#usage) on css modules.
+For more details on the vue-loader configuration for css modules, see the [vue-loader docs](https://vue-loader.vuejs.org/guide/css-modules.html#usage).
 
 ## Pre-configured components
 
-This project comes with 
+This project comes with pre-configured components in the `src/components` folder to speed up development time. A list of each component can be found below:
+
+**TODO: add components list...**
