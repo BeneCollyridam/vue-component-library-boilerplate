@@ -3,10 +3,12 @@
     <template slot="top-bar">
       <div id="top-bar">
         <h3>Dashboard</h3>
-        <c-avatar></c-avatar>
+        <c-avatar />
       </div>
     </template>
+
     <template slot="side-menu"></template>
+
     <template slot="content">
       <l-content>
         <h1>Dashboard</h1>
@@ -22,12 +24,7 @@
 
 <script>
 export default {
-  name: 'hello',
-  data() {
-    return {
-    };
-  },
-  methods: {},
+  name: 'Dashboard',
 };
 </script>
 
