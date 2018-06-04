@@ -36,6 +36,10 @@ const routes = [
     name: 'Settings',
     component: Settings,
   },
+  {
+    path: '*',
+    redirect: 'data',
+  },
 ];
 
 export default routes;
