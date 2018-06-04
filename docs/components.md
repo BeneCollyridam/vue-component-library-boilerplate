@@ -4,7 +4,7 @@
   * [Pure components](#pure-components)
   * [Layout components](#layout-components)
 * [Generating new components](#generating-new-components)
-  * [Styling components](#styling-components)
+* [Styling components](#styling-components)
     * [Using modules](#using-modules)
     * [Styling modules](#styling-modules)
 * [Pre-configured components](#pre-configured-components)
@@ -46,11 +46,11 @@ yarn new component
 
 All generated components come with an adjacent unit test that lives next to your component file in the `src/components` folder.
 
-### Styling components
+## Styling components
 
 This project uses `scss` as the default style language in `.vue` files. Since `css` is also valid `scss` it makes sense to include this as a default. To use another style preprocesser see the vue-loader docs on [using preprocessers](https://vue-loader.vuejs.org/guide/pre-processors.html#sass).
 
-#### Using modules
+### Using modules
 
 New components have the `module` style setting as default in all component files, ie.e `<style lang="scss" module>` to enforce [css modules](https://github.com/css-modules/css-modules). By using modules, all styles will be suffixed with a hash (e.g. `class="selector-abc123"`) to prevent any styling clashes with other styles.
 
@@ -58,7 +58,7 @@ New components have the `module` style setting as default in all component files
 
 For more details on the vue-loader configuration for css modules, see the [vue-loader docs](https://vue-loader.vuejs.org/guide/css-modules.html#usage).
 
-#### Styling modules
+### Styling modules
 
 Styles are included in the `<template>` tag by using `$style.` in an element's `:class` binding. For example:
 
