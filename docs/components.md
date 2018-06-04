@@ -52,7 +52,9 @@ This project uses `scss` as the default style language in `.vue` files. Since `c
 
 ### Using modules
 
-New components have the `module` style setting as default in all component files, ie.e `<style lang="scss" module>` to enforce [css modules](https://github.com/css-modules/css-modules). By using modules, all styles will be suffixed with a hash (e.g. `class="selector-abc123"`) to prevent any styling clashes with other styles.
+New components have the `module` style setting as default in all component files, ie. `<style lang="scss" module>` to enforce [css modules](https://github.com/css-modules/css-modules). By using modules, all styles will be suffixed with a hash (e.g. `class="selector-abc123"`) to prevent any styling clashes with other styles.
+
+Using modules may not always be preferable, for example when you want to use styling on component's parent element to change the component's child elements, or when you want those styles to be available for others to manipulate. But it is always a good idea to consider whether it is appropriate to not use modules, and therefore it comes as a default setting.
 
 **To opt-out of the `module` setting simply delete it in the `<style>` tag or replace it with `scoped` if you want scope the styles without using modules.**
 
