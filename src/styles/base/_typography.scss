@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500|Work+Sans:500,700');
 
-$system-default-font-family: "IBM Plex Sans";
-
 $heading-font-family: "Work Sans";
 $heading-font-weight: 700;
 
-$content-font-family: $system-default-font-family;
+$content-font-family: "IBM Plex Sans";
 $content-font-weight: 400;
 
 %font-heading {

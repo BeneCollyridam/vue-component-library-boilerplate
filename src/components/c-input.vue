@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="$style.container">
     <!-- 
     Bind the parent's id attribute to the label's "for" attribute. 
     The id attribute from the parent will be added to the input,
@@ -50,4 +50,10 @@ export default {
 
 <style lang="scss" module>
 @import '../styles/lib.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 </style>

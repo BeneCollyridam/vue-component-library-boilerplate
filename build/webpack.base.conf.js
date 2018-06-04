@@ -29,6 +29,22 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              // enable CSS Modules
+              modules: true,
+              // customize generated class names
+              localIdentName: '[local]_[hash:base64:8]'
+            }
+          },
+          'sass-loader'
+        ]
+      },
+      {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
