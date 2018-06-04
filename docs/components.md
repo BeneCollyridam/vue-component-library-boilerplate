@@ -19,13 +19,17 @@ Components are divided into "pure" and "layout" components.
 
 `c-**.vue`
 
-"Pure" components have a single designated task. Components can contain other components.
+Pure components have a single designated task. Components can contain other components.
+
+**TODO: add examples**
 
 ### Layout components
 
 `l-**.vue`
 
-"Layout" components wrap other components and are purely concerned with the layout of its contents.
+Layout components wrap other components and are purely concerned with the layout of its contents.
+
+**TODO: add examples**
 
 ## Generating new components
 
