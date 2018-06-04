@@ -16,9 +16,6 @@
 
     <template slot="dashboard-content">
       <router-view></router-view>
-      <l-content>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a tristique tellus. Nunc sit amet tellus a ante luctus venenatis quis at felis. Duis consectetur erat enim, non placerat ligula luctus nec. Aenean tempor urna augue, vel cursus ligula facilisis in. Quisque ut magna eu nulla finibus dignissim quis ac nisl. Etiam sodales congue porta. Nam consequat dolor elit, elementum cursus sem tempor id. Quisque quis nunc eu ligula vulputate pellentesque ut quis arcu.</p>
-      </l-content> 
     </template>
   </l-dashboard>
 </template>
@@ -32,17 +29,27 @@ export default {
         {
           title: 'Data',
           icon: 'timeline',
-          route: 'dashboard',
+          route: { name: 'Data' },
         },
         {
           title: 'Profile',
           icon: 'account_circle',
-          route: 'profile',
+          route: { name: 'Profile' },
+        },
+        {
+          title: 'Messages',
+          icon: 'forum',
+          route: { name: 'Messages' },
+        },
+        {
+          title: 'Notifications',
+          icon: 'notifications',
+          route: { name: 'Notifications' },
         },
         {
           title: 'Settings',
           icon: 'settings',
-          route: 'settings',
+          route: { name: 'Settings' },
         },
       ],
     };

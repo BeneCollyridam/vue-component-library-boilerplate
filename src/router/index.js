@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Dashboard from './views/Dashboard';
+import Dashboard from './dashboard/Dashboard';
+import DashboardRoutes from './dashboard';
 
 Vue.use(Router);
 
@@ -11,6 +12,7 @@ export default new Router({
       path: '/dashboard',
       name: 'Dashboard',
       component: Dashboard,
+      children: [...DashboardRoutes.routes],
     },
   ],
 });
