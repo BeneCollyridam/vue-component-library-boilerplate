@@ -1,14 +1,17 @@
 <template>
   <div class="hello">
     <h1>Vue Component</h1>
-    <c-input
+    <c-upload-excel
       id="form-input"
-      v-model="inputData"
       label="input"
       placeholder="Email"
-      @focus="focusEvent"
+      @upload="logData"
     />
-    <p>{{ inputData }}</p>
+    <div>
+      <c-table
+        :table-data="tableData"
+      />
+    </div>
   </div>
 </template>
 
@@ -17,13 +20,14 @@ export default {
   name: 'hello',
   data() {
     return {
-      inputData: '',
+      tableData: [[1, 2, 3]],
       msg: 'Welcome to Your Vue.js App',
+      test: 'asd',
     };
   },
   methods: {
-    focusEvent: () => {
-      console.log('It focused!');
+    logData: function logData(data) {
+      this.tableData = data;
     },
   },
 };
