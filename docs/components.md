@@ -79,11 +79,9 @@ Styles are included in the `<template>` tag by using `$style.` in an element's `
 
 <script>
 export default {
-  data: () => {
-    return {
-      isRed: true,
-    };
-  },
+  props: {
+    isRed: Boolean,
+  }
 };
 </script>
 
