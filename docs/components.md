@@ -77,6 +77,16 @@ Styles are included in the `<template>` tag by using `$style.` in an element's `
   </div>
 </template>
 
+<script>
+export default {
+  data: () => {
+    return {
+      isRed: true,
+    };
+  },
+};
+</script>
+
 <style lang="scss" module>
 .red {
   color: red;
