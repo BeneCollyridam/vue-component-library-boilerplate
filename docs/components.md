@@ -54,6 +54,8 @@ New components have the `module` style setting as default in all component files
 
 **To opt-out of the `module` setting simply delete it in the `<style>` tag or replace it with `scoped` if you want scope the styles without using modules.**
 
+For more details on the vue-loader configuration for css modules, see the [vue-loader docs](https://vue-loader.vuejs.org/guide/css-modules.html#usage).
+
 #### Styling modules
 
 Styles are included in the `<template>` tag by using `$style.` in an element's `:class` binding. For example:
@@ -82,8 +84,6 @@ Styles are included in the `<template>` tag by using `$style.` in an element's `
 }
 </style>
 ```
-
-For more details on the vue-loader configuration for css modules, see the [vue-loader docs](https://vue-loader.vuejs.org/guide/css-modules.html#usage).
 
 ## Pre-configured components
 
