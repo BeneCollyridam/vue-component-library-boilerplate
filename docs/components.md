@@ -5,6 +5,8 @@
   * [Layout components](#layout-components)
 * [Generating new components](#generating-new-components)
   * [Styling components](#styling-components)
+    * [Using modules](#using-modules)
+    * [Styling modules](#styling-modules)
 * [Pre-configured components](#pre-configured-components)
 
 ## Component types
