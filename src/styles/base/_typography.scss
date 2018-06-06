@@ -1,3 +1,4 @@
+// FONTS
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500|Work+Sans:500,700');
 
 $heading-font-family: "Work Sans";
@@ -9,23 +10,51 @@ $content-font-weight: 400;
 %font-heading {
   font-family: $heading-font-family;
   font-weight: $heading-font-weight;
-  color: $color-heading-text;
+  color: $color-black;
 }
 
 %font-content {
   font-family: $content-font-family;
   font-weight: $content-font-weight;
-  color: $color-text;
+  color: $color-black;
 }
 
 * {
   @extend %font-content;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   @extend %font-heading;
 }
 
 p {
   line-height: 1.5;
+}
+
+// ICONS
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: $size-medium;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }

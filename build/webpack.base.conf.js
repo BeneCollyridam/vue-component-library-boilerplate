@@ -30,18 +30,28 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        use: [
-          'vue-style-loader',
+        oneOf: [
+          // this matches `<style module>`
           {
-            loader: 'css-loader',
-            options: {
-              // enable CSS Modules
-              modules: true,
-              // customize generated class names
-              localIdentName: '[local]_[hash:base64:8]'
-            }
+            resourceQuery: /module/,
+            use: [
+              'vue-style-loader',
+              {
+                loader: 'css-loader',
+                options: {
+                  modules: true,
+                  localIdentName: '[name]_[local]_[hash:base64:5]'
+                }
+              }
+            ]
           },
-          'sass-loader'
+          // this matches plain `<style>` or `<style scoped>`
+          {
+            use: [
+              'vue-style-loader',
+              'css-loader'
+            ]
+          }
         ]
       },
       {
